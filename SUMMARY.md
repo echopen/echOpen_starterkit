@@ -5,7 +5,7 @@
    * [Détection](detection.md)
    * [Analyse du signal](signal_analysis.md)
    * [Interface avec l'utilisateur](user_interfacing.md)
-* [Interface avec l'utilisateur](user_interfacing.md)
+   * Bac de test
 * [Bac de test](bac_test.md)
 * [Glossaire](glossaire.md)
 

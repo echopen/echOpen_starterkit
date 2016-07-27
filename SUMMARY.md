@@ -2,6 +2,7 @@
 
 * [Welcome](README.md)
 * [Monter un laboratoire de type EchOpen](monter_un_laboratoire_de_type_echopen.md)
+   * Matériel
 * [Introduction à la technique](intro.md/readme.md)
    * [Détection](detection.md)
    * [Analyse du signal](signal_analysis.md)

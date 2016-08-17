@@ -26,7 +26,7 @@ _Détection d'enveloppe_
 
 ### Conversion analogique numérique et calcul de pixels
 
-La sortie du détecteur d’enveloppe est ensuite échantillonnée pour être analysée et envoyée sous forme numérique à une application en interface avec l’utilisateur. On utilise pour ça un CAN, dont il faut judicieusement choisir la fréquence d'échantillonnage.
+La sortie du détecteur d’enveloppe est ensuite échantillonnée pour être analysée et envoyée sous forme numérique à une application en interface avec l’utilisateur. On utilise pour ça un [CAN](https://alienor134.gitbooks.io/echopen-guide-book/content/glossaire.html), dont il faut judicieusement choisir la fréquence d'échantillonnage.
 
 Pour chaque pulse envoyé et chaque slave d’échos correspondants reçus, on va tracer une ligne de pixels correspondant à la ligne dans l’espace qui a été sondée. Le temps d’arrivée d’une slave va correspondre à la distance qui a été parcourue. Grâce au temps de trajet entre l’émission et la réception des ultrasons, et connaissant les vitesses de propagation dans les tissus, on peut déterminer la distance qui sépare les différentes interfaces. On peut donc cartographier le milieu traversé par l’onde en fonction de la profondeur, et ce pour chaque ligne d’acquisition.
 

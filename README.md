@@ -11,12 +11,12 @@ Bonne lecture à tous!
 
 Merci aux contributeurs: 
 
-Jérôme (guide acoustique et expert technique)
-NA (état de l’art )
+Jérôme (guide acoustique et expert technique)  
+NA (état de l’art )  
 Emilie (analyse fonctionnelle)
-Muriel (analyse fonctionnelle)
-Juan (mindmap domaines d’intervention)
-Luc Jonveaux
-Ozanne
-Olivier
-Aliénor
+Muriel (analyse fonctionnelle)  
+Juan (mindmap domaines d’intervention)  
+Luc  
+Ozanne  
+Olivier  
+Aliénor  

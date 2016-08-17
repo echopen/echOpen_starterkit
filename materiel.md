@@ -30,4 +30,18 @@ Pour fabriquer la sonde il faut le matériel type d&#39;un élecctronicien. Voic
 | Vernis électronique |   | Transistor MOSFET |   |
 | Nettoyant de flux |   | Kit de gaine  thermorétractable |   |
 
+_table 1: labtool_
 
+![](images/materiel.JPG)
+
+_Figure 1: Pinces pour électronique, matériel d’atelier. Méthode de rangement du matériel._
+
+![breadboard](images/breadboard.JPG)
+_Figure 2: plateforme type de travail: le breadboard_
+
+![test](images/appareils_test.JPG)
+
+_Figure 3: Appareils de test_
+
+L’oscilloscope et le multimètre permettent d’accéder rapidement aux valeurs directement sur le circuit (il faut des câbles de connections pour prendre les mesures depuis le breadboard vers oscilloscope)
+Le GBF permettra de simuler les différentes entrées pour une fonction sans passer par le reste du circuit.

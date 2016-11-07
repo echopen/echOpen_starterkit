@@ -1,4 +1,4 @@
-# warming up
+# Warming up
 
 First, let us know more about you. Fill the form available following this [link](https://docs.google.com/forms/d/e/1FAIpQLSf-uZXvF2iQDBWNyrjOHm0RUr68V2j7FVtGHwMJ8RIoHP_m8Q/viewform), or send us an email at contact@echopen.org. 
 

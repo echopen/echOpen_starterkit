@@ -1,22 +1,30 @@
 
-#  Description
+#  Presentation
+## What is echOpen ?
 
-EchOpen est un projet open et collaboratif, dirigé par un noyau multidisciplinaire d'experts et professionnels de haut niveau dans le but de rendre les technologies d'imagerie médicale  open et libres d'accès. L'objectif est de concevoir un dispositif d'écho stéthoscopie (sonde à ultrasons) fonctionnel d'un faible coût (abordable) et open source  connecté à un smartphone, permettant la transformation radicale de l'orientation de diagnostic dans les hôpitaux, la médecine générale et les zones mal desservies médicalement. Cette initiative est destinée aux professionnels de la santé des pays du Sud et du Nord.
+echOpen is an open and collaborative project, led by a multidisciplinary core of experts and senior professionals in order to make medical imaging technologies open and accessible. The aim is to build a functional low-cost (affordable) and open source echo-stethoscope (ultrasound probe) connected to a smartphone, enabling a radical change in diagnostic orientation in hospitals, general medicine and medically underserved areas. This project is intended for health professionals in northern and southern countries.
 
-EchOpen est né à la fin de 2014 comme un projet communautaire rassemblant les personnes intéressées dans les dispositifs m-santé et de e-santé pour l'avenir de la médecine du monde entier. Après avoir réuni une équipe de base de 5 personnes avec une expertise essentielle pour le projet, nous avons testé la faisabilité (état de l'art, des applications, etc.). Nous avons ensuite mobilisé d'autres profils et partenaires pour créer une communauté opérationnelle basée sur 9 défis spécifiques que nous avons identifiés, qui couvrent l'ensemble du projet. Comme chaque participant dispose de divers intérêts et capacités d'engagement et d'expertise, nous avons co-créé un calendrier de projet en conformité avec ces différents éléments. L'utilisation d'un [wiki](http://echopen.org/index.php/Main_Page), qui rassemble toutes les informations (techniques, procédés, supports, etc.), et des outils de collaboration en ligne ([GitHub](https://github.com/echopen), [Slack](http://slack.echopen.org/), etc.), les contributeurs sont en mesure de prendre rapidement la main sur des challenges ou des questions spécifiques et apporter des solutions selon un plan de développement détaillé et leurs disponibilités. Certains partenaires clés ont apporté des ressources telles que la finance, les équipements, les espaces de travail, etc. pour soutenir l'effort et atteindre les objectifs du projet.
+## echOpen in brief
+echOpen was born in late 2014 as a community project bringing together people interested in mHealth devices and eHealth for the future of worldwide health. Having gathered a core team of 5 persons with necessary expertise for the project, we tested the feasibility (state of the art, potential applications, etc.). We then mobilised people of various professional backgrounds and partners to create an operational community based around 9 identified specific challenges covering the entire project :
 
-Si vous désirez rejoindre cette communauté, ce guide vous aidera à comprendre le projet et les principaux défis qui doivent être adressés. Il vous aidera à définir vos propres missions tout en contribuant au projet global echOpen. Il vous guidera le long de la conception de votre propre écho-stetoscope en utilisant l'expérience EchOpen a déjà acquise.
+* Medicotechnical matters : Designing a medical device to meet medical needs
+* Collaborative and community matters : Designing good methodology for the community
+* Legal and licence matters : Making sure everything remains accessible
+* Regulatory matters : Following regulatory expectations
+* Communication matters : Spread the project and its philosophy widely
+* Ethical matters : Respecting the human being and improving healthcare
+* Training matters : Making sure users are well trained
+* Public health matters : Improving healthcare accessibility
+* Economical matters : Finding ways to sustain the project, the device and all around
 
-Bonne lecture à tous!
+As each participant has different interests, skills and disponibilities, a project schedule was created taking into account these different aspects.
 
-Merci aux contributeurs: 
+The use of a wiki, gathering all the information (techniques, processes, support material, ...), and online collaboration tools (GitHub, Slack, …), enables contributors to quickly grasp challenges or specific questions and provide solutions according to a detailed development plan and their disponibilities. Some key partners brought resources such as finance, equipment, work environment, etc. to support the advancement of the project and achieve its goals.
 
-Jérôme (guide acoustique et expert technique)  
-NA (état de l’art )  
-Emilie (analyse fonctionnelle)
-Muriel (analyse fonctionnelle)  
-Juan (mindmap domaines d’intervention)  
-Luc  
-Ozanne  
-Olivier  
-Aliénor  
+If you wish to join this community, this guide can help you understand the project and its main challenges that we are  tackling. It can help you to define your own goals while contributing to the overall echOpen project. It is meant to guide you through the design of your own echo-stethoscope using the experience of the echOpen project.
+
+Enjoy your reading !
+
+echOpen community
+
+For more details, please visit echopen.org 

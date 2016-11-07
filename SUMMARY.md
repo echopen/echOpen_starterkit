@@ -5,7 +5,7 @@
    * [warm up](warm_up.md)
    * [Community tools](community_tools.md)
        * [Slack](slack.md)
-       * Basecamp
+       * [Basecamp](basecamp.md)
        * Facebook group
    * Coding & Documenting
 * [Monter un laboratoire de type EchOpen](monter_un_laboratoire_de_type_echopen.md)

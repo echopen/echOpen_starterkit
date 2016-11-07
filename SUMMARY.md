@@ -3,7 +3,7 @@
 * [Welcome](README.md)
 * [Integration](integration.md)
    * [warm up](warm_up.md)
-   * Community tools
+   * [Community tools](community_tools.md)
    * Coding & Documenting
 * [Monter un laboratoire de type EchOpen](monter_un_laboratoire_de_type_echopen.md)
    * [Matériel](materiel.md)

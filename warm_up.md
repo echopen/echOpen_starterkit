@@ -1,19 +1,16 @@
-# warm up
+# warming up
 
-First, let us know more about you. Send us an email at contact@echopen.org. 
+First, let us know more about you. Fill the form available following this [link](https://docs.google.com/forms/d/e/1FAIpQLSf-uZXvF2iQDBWNyrjOHm0RUr68V2j7FVtGHwMJ8RIoHP_m8Q/viewform), or send us an email at contact@echopen.org. 
 
-This will trigger the integration process. 
+The integration process : Join us
 
-1) We'll add you to our 3 community master tools :  
+1. Discover the project and get in touch. You can join the [Facebook group](https://www.facebook.com/groups/echopen/) or register for the newsletter buy filling the "stay up to date" on echOpen website. 
+2. Discover this [starterkit](https://www.gitbook.com/@echopen)
+3. Integrate echOpen slack through the slackin (soon to come) or request an invite sending an email at contact@echopen.org. The slack is where the community discuss !
+4. Integrate within the basecamp (available for some sub-projects of the echOpen global project). 
 
-- the Slack space, as soon as you are registered, we invite you to add a short description in order for the community to identify your skills and eventual needs.
+Build hardware and build software
 
-- the Basecamp space. This is our project management tool. 
+1. Build hardware with the dev kit mostly available on the github. 
+2. Build software with the dedicated github repository
 
-- the [facebook](https://www.facebook.com/groups/echopen) page 
-
-2) We'll send you 2 links :
- 
-- the [GitHub](github.com/echopen) page link where you'll find all the source codes
-
-- the [GitBook](https://www.gitbook.com/@echopen) page documentation  

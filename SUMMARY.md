@@ -4,7 +4,7 @@
 * [Integration](integration.md)
    * [warm up](warm_up.md)
    * [Community tools](community_tools.md)
-       * Slack
+       * [Slack](slack.md)
        * Basecamp
        * Facebook group
    * Coding & Documenting

@@ -8,4 +8,4 @@ You'll find essentially two usages
 
 * Threads : these are conversations about structured topics. Indeed, if Slack is the perfect tool to exchange informally on any subject, when a topic emerges and needs that member teams exchange in a more detailed and structured way, then Basecamp Messages are the right place to launch threads. 
 
-* Basecamp offers also some daily alerts, inviting users to answer a daily question about "What did you work on today?", "See anything great lately that inspired you?". This is just perfect to maintain a team-builing rythm , and to keep all the community members informed of the advances.
+* Basecamp offers also some daily alerts, inviting users to answer a daily question about "What did you work on today?", "See anything great lately that inspired you?". This is just perfect to maintain a team-builing rythm, and to keep all the community members informed of the current project advances.

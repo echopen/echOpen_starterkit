@@ -13,8 +13,6 @@ Here are the main repos you should be aware of
 
 ## Software repos
 
-* [electronic](https://github.com/echopen/electronic) : is dedicated to echOpen's electronic (gerber files and such) and mecanics (3D plans & such) and its control
-
 * [android-app](https://github.com/echopen/android-app) : the repo dedicated to the Android App. For now on, the backend is quite stabilized. The UI is still on building
 
 * [kit-soft](https://github.com/echopen/kit-soft) : dedicated to 
@@ -32,21 +30,25 @@ Here are the main repos you should be aware of
 
 you'll find also in the kit-soft repos other folder taht will be deprecated and cleaned soon
 
-* [medicotechnical](https://github.com/echopen/medicotechnical) : is womewhat hard to dive in. It is the basis of our documentation format normalisation process
-
 * [echopen.github.io](https://github.com/echopen/echopen.github.io) : this is an example of static site that is automatically generated for our events. Other static sites are to come, they will automatically generate documentation from the repos.
 
 
  
 ## Hardware repos
 
+* [electronic](https://github.com/echopen/electronic) : is dedicated to echOpen's electronic (gerber files and such) and mecanics (3D plans & such) and its control
+
 ## Miscellaneous
 
 ### documentation
+
 * android-app-doc : is the GitHub repo synchronized with Android App GitBook documentation
 
-*  
+* [starter-kit](https://github.com/echopen/starterkit) : is the GitHub repo synchronized with StarterKit GitBook. 
+
 ### information
+
+* [medicotechnical](https://github.com/echopen/medicotechnical) : is womewhat hard to dive in. It is the basis of our documentation format normalisation process
 
 * [twitter](https://github.com/echopen/twitter) : is the twitter graph of echOpen's community (randomly maintained)
 

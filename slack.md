@@ -35,9 +35,6 @@ So, in addition to the classical **general** and **random** channels that come b
 
 * [usb](https://echopen.slack.com/archives/usb) : channel to dedicated to USB data transfer, will survive ?
 
-* 
-
-
 *Remark* some of the channels do not begin by a `prj_` prefix. The reason that they are not project in the strict sense of the term and are not purposed to be included in a GitHub repo. **events_capx_andsuch**, related to organizing events is such an example.  
 
 *If you're robot friendly, then you can script some that you'd consider to be relevant. It will be a joy ti test and adapot some robots in our family.*

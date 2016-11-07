@@ -17,8 +17,6 @@ Here are the main repos you should be aware of
 
 * [android-app](https://github.com/echopen/android-app) : the repo dedicated to the Android App. For now on, the backend is quite stabilized. The UI is still on building
 
-* android-app-doc : is the GitHub repo synchronized with Android App GitBook documentation
-
 * [kit-soft](https://github.com/echopen/kit-soft) : dedicated to 
   * Image Processing
 - [ImageProcessing](https://github.com/echopen/kit-soft/tree/master/ImageProcessing) -> this is a algos submission web server. It supports uploading of image denoising algorithms. These are analysed, and about 10 metrics are processed processor related metrics and ultrasound-oriented denoising quality metrics. This website will host a challenge platform to crowdsource denoisiing algorithms. This will be put on online production in the following weeks (this is written 08.11.16)
@@ -45,5 +43,12 @@ you'll find also in the kit-soft repos other folder taht will be deprecated and 
 ## Miscellaneous
 
 ### documentation
+* android-app-doc : is the GitHub repo synchronized with Android App GitBook documentation
 
+*  
 ### information
+
+* [twitter](https://github.com/echopen/twitter) : is the twitter graph of echOpen's community (randomly maintained)
+
+* [articles](https://github.com/echopen/articles) : is a bunch of State of the Art documents on ultrasound technologies
+ 

@@ -13,4 +13,3 @@ Build hardware and build software
 
 1. Build hardware with the dev kit mostly available on the github. 
 2. Build software with the dedicated github repository
-

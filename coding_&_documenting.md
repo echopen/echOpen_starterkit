@@ -4,9 +4,9 @@ To find the sources, you should flashlight yourself to our GitHub [repos](https:
 
 There are plenty of repos, dedicated to the Software, Hardware and documentation
 
-* Remarks 
-** The names of the repos might change in the following month, since we have just finished to define the naming convention and more roughly the documentation format. 
-** Some repos have their documentation counter-part, so that you'll find precisely the present GitBook's repo;)
+* Remarks
+  * The names of the repos might change in the following month, since we have just finished to define the naming convention and more roughly the documentation format. 
+  * Some repos have their documentation counter-part, so that you'll find precisely the present GitBook's repo;)
 
 Here are the main repos you should be aware of 
 
@@ -32,8 +32,6 @@ you'll find also in the kit-soft repos other folder taht will be deprecated and 
 
 * [echopen.github.io](https://github.com/echopen/echopen.github.io) : this is an example of static site that is automatically generated for our events. Other static sites are to come, they will automatically generate documentation from the repos.
 
-
- 
 ## Hardware repos
 
 * [electronic](https://github.com/echopen/electronic) : is dedicated to echOpen's electronic (gerber files and such) and mecanics (3D plans & such) and its control

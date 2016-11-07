@@ -1,7 +1,7 @@
 # Summary
 
 * [Welcome](README.md)
-* Integration
+* [Integration](integration.md)
 * [Monter un laboratoire de type EchOpen](monter_un_laboratoire_de_type_echopen.md)
    * [Matériel](materiel.md)
 * [Introduction à la technique](intro.md/readme.md)

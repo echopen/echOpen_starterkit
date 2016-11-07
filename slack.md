@@ -29,9 +29,13 @@ So, in addition to the classical **general** and **random** channels that come b
 
 * [prj_regul_norms](https://echopen.slack.com/archives/prj_regul_norms) : dedicated to norms and certifications issues
 
-* [rules_and_process](https://echopen.slack.com/archives/rules_and_process)
+* [rules_and_process](https://echopen.slack.com/archives/rules_and_process) : dedicated to contributors rules and process for hardware, software and such. Outcome : a complete guide
 
 * [events_capx_andsuch](https://echopen.slack.com/archives/events_capx_andsuch) : dedicated to organize and announce, events, workshops, hackathons & such
+
+* [usb](https://echopen.slack.com/archives/usb) : channel to dedicated to USB data transfer, will survive ?
+
+* 
 
 
 *Remark* some of the channels do not begin by a `prj_` prefix. The reason that they are not project in the strict sense of the term and are not purposed to be included in a GitHub repo. **events_capx_andsuch**, related to organizing events is such an example.  

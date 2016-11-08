@@ -1,2 +1,2 @@
-# Monter un laboratoire de type EchOpen
+# Set up your own echOpen lab
 

@@ -5,7 +5,7 @@
    * [warm up](warm_up.md)
    * [Community tools](community_tools.md)
    * [Coding & Documenting](coding_&_documenting.md)
-* [Set up your own echOpen lab](setup_your_own_echopen_lab_md.md)
+* [Set up your own echOpen lab](monter_un_laboratoire_de_type_echopen.md)
    * [Hardware](hardware.md)
 * [Introduction à la technique](intro.md/readme.md)
    * [Detection](detection.md)

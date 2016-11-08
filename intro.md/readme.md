@@ -1,35 +1,35 @@
-# Introduction à la technique
+# Technical introduction
 
-## Principe
+## Principle
 
-Les ondes ultras-sonores sont des ondes acoustiques \(&gt;20 kHz\), elle peuvent se propager au travers du corps humain. La propagation du signal est fonction des propriétés des tissus traversés. La formation du signal échographique est composé de la réflexion des ondes sur une interface tissulaire de densité différente, et la diffusion des ondes ultras sonores sur les petites particules.
+Ultrasonic waves are high frequency acoustic waves (more than 20 kHz) which can propagate through the human body. The propagation depends on the mechanical properties of the traversed tissues. The ultrasound signal exists in the superposition of the waves reflected on interfaces between tissues with different impedance, and of the scattering of ultrasonic waves by small particles.
 
-Pour former une image, l’échographe utilise le principe de réflexion des ultrasons : une sonde émet une salve d’ultrasons puis se met à l’écoute des échos réfléchis. Une image échographique est composé de l'ensemble des effets d'atténuation, de réflexion, réfraction et de dispersion. Le corps humain étant un milieu principalement constitué d’eau, les ultrasons s’y déplacent à une vitesse de 1460 $$ m.s^{-1}  $$. Lorsque les ultrasons rencontrent des tissus, graisses ou organes, leur vitesse de propagation change, elle peut alors varier entre 1480 et 1600 $$ m.s^{-1}  $$.
+To create an image the ultrasound scanner emits an ultrasound pulse and listen to the reflected echoes. As the human body is mainly composed of water, ultrasounds propagate at a speed close to 1460 $$ m.s^{-1}  $$. When ultrasound waves propagate through tissues, fat or organs, their propagation speed varies from 1450 to 1700 $$ m.s^{-1}  $$.
 
-| Milieu | Vitesse de propagation ($$ m.s^{-1} $$) |
+| Medium | Propagation speed ($$ m.s^{-1} $$) |
 | :--- | :--- |
 | Air | 330 |
-| Eau | 1500 |
-| Tissus mous | 1450-1700 |
-| Os | 3000-4000 |
+| Water | 1500 |
+| Soft tissues | 1450-1700 |
+| Bones | 3000-4000 |
 
-_Table 1 : La vitesse de propagation des ultrasons pour les médias différents et leur densité dans l'image CT [[1]](http://www.google.com/patents/WO2006077338A1?cl=en)._
+_Table 1 : Propagation speed of ultrasound for different media [[1]](http://www.google.com/patents/WO2006077338A1?cl=en)._
 
-Grâce à ces différences de vitesse de propagation, couplées à la masse volumique de l'organe, chaque organe de notre corps a une [impédance acoustique](https://alienor134.gitbooks.io/echopen-guide-book/content/glossaire.html) qui lui est propre. Cela permet donc une réflexion partielle des ultrasons entre deux tissus de caractéristiques acoustiques différentes.
+Due to the differences of the mechanical properties (Lamé coefficients and density) of each organ and tissue, the acoustic waves are partially reflected at each interface between two different media.
 
-| Milieu | Impédance acoustique ($$ kg.m^{-2}.s^{-1}\times 10^{-6} $$) |
+| Medium | Acoustic impedance ($$ kg.m^{-2}.s^{-1}\times 10^{-6} $$) |
 | :--- | :--- |
 | Air | 0,0004 |
-| Poumon | 0,26 |
-| Squelette | 3,8-7,4 |
-| Tissus mous | 1,3-1,7 |
-| Eau | 1,5 |
+| Lung | 0,26 |
+| Bones | 3,8-7,4 |
+| Soft tissues | 1,3-1,7 |
+| Water | 1,5 |
 
-_Table 2 : Impédances acoustiques caractéristiques de différentes parties du corps [[2]](http://www.google.com/patents/WO2006077338A1?cl=en)._
+_Table 2 : Acoustic impedances for different parts of the human body [[2]](http://www.google.com/patents/WO2006077338A1?cl=en)._
 
-Ces valeurs montrent qu’il peut y avoir de grandes différences d’impédance dans le corps telle qu’entre les tissus mous et de l'air et entre les tissus mous et des tissus durs \(os, pierres, corps étrangers\). Ces interfaces sont très réfléchissante ou très "échogènes" \(générateurs d'écho\). Derrière ces interfaces, une zone d'ombre apparaît sur les images échographiques du fait que le signal sonore a été quasiment entièrement réfléchi..
+These numbers show that there can be large impedance differences in the body such as between soft tissues and air or between soft tissues and hard tissues (bones, stones, foreign bodies). These interfaces are highly reflective or echogenic (generator of echoes). Behind these interfaces, a shadow area appears on the ultrasound images as the signal has been almost totally reflected.
 
-## Architecture du système entier
+## Architecture of the whole system
 
 L'appareil permettant de réaliser des échographies est appelé échographe. Il est constitué :
 

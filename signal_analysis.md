@@ -1,37 +1,37 @@
-## Fonction analyse du signal
+## Signal processing function
 
 ![](/images/signal_analysis.png)  
-_Analyse fonctionnelle_
+_Figure 19: Functional analysis_
 
-L’approche présentée ici maximise l’utilisation de traitement analogique du signal, afin de réduire la fréquence d’échantillonnage nécessaire pour la partie numérique, pour avoir un moindre coût et une moindre consommation. Le circuit est sensible aux bruits. Le traitement analogique permettrait un traitement du signal accessible plus facilement et l’ouverture sur de nouvelles techniques, comme l’[echosthétoscopie Doppler](https://alienor134.gitbooks.io/echopen-guide-book/content/glossaire.html).
+The approach presented here maximises the use of analog signal processing in order to reduce the required sampling rate for the digital part. It allows lower costs and less energy consumption. The circuit is sensitive to noise.
 
-### Amplification TGC
+### TGC amplification
 
-Lorsque le son se propage dans les tissus mous, il est atténué. Cette atténuation augmente linéairement avec la fréquence, donc plus la fréquence de travail est importante, plus la profondeur de pénétration du son sera faible. Dans l’échographe, on compense cette atténuation avec une compensation de gain temporel \(Time Gain Compensation\). L’atténuation dans un tissu uniforme suit une loi exponentielle décroissante de la distance parcourue. Le TGC doit donc être une fonction exponentielle croissante de la distance pour que le produit soit une constante, et qu’on s’affranchisse de la perte de signal due à la distance. Dans le cas de l’échosthétoscope, les tissus traversés sont d’impédance différentes, la loi d’atténuation n’est pas une simple exponentielle. On note en revanche qu’une approximation linéaire pour le TGC est convenable.  
+When the wave propagates through soft tissues it is attenuated. The attenuation increases with frequency, so the higher the frequency, the shorter the penetration depth. In ultrasound scanner, this attenuation is counterbalanced with a Time Gain Compensation (TGC). The acoustic wave decrease exponentially with distance, therefore the TGC is a function increasing exponentially with distance so that the result of the product is a constant, and the signal loss due to distance is offset. For the echo-sthetoscope, penetrated tissues have different impedances and the attenuation law is not a simple exponential. However a linear approximation of the TGC is appropriate.
+
 ![exemple de TGC](/images/tgc.png)  
-_Exemple de TGC_
+_Figure 20: TGC amplification command_
 
-### Second filtrage
+### Second filtering
 
-Les signal de départ est bruité, et le passage par l’amplificateur TGC rajoute du bruit. Il faut filtrer le signal avec un filtre passe bande de fréquence de résonance proche de fc. On ne pouvait pas utiliser un filtre passe-bande dès le début car les trop grandes différences d’amplitude entre la résonance basse-fréquence et les échos superposés auraient posé problème pour choisir les composants.
+The starting signal is noisy and the TGC increases noise. The signal needs to be filtered using a bandpass filter with a resonant frequency close to the central frequency of the transducer. This filter could not be used from the beginning because the large difference in amplitude between the low frequency resonance and the superimposed echoes would have been problematic for the choice of components.
 
 ![ensemble des signaux](/images/signals.png)  
-_étapes du traitement du signal_
+_Figure 21: Steps of the signal processing_
 
-### Détection d’enveloppe
+### Envelope detection
 
-On s’intéresse à l’énergie du signal reçu en écho, qui est caractéristique des tissus rencontrés par l’onde et qui l’ont réfléchie \(le coefficient de réflexion dépend en effet du type d’interface rencontré\). Il faut récupérer l’énergie du signal, contenue dans l’enveloppe.  
+We are interested in the energy of the received echo signal which is contained in the envelope.  
 ![Détection d'enveloppe](/images/detection_enveloppe.png)  
-_Détection d'enveloppe_
+_Figure 22: Envelope detection_
 
-### Conversion analogique numérique et calcul de pixels
+### Analog to digital conversion and calculation of pixels
 
-La sortie du détecteur d’enveloppe est ensuite échantillonnée pour être analysée et envoyée sous forme numérique à une application en interface avec l’utilisateur. On utilise pour ça un [CAN](https://alienor134.gitbooks.io/echopen-guide-book/content/glossaire.html), dont il faut judicieusement choisir la fréquence d'échantillonnage.
+The output of the envelope detector is sampled to be processed and sent as a digital signal to an application interfacing with the user. An ADC is used and the sampling frequency needs to be chosen wisely.
 
-Pour chaque pulse envoyé et chaque slave d’échos correspondants reçus, on va tracer une ligne de pixels correspondant à la ligne dans l’espace qui a été sondée. Le temps d’arrivée d’une slave va correspondre à la distance qui a été parcourue. Grâce au temps de trajet entre l’émission et la réception des ultrasons, et connaissant les vitesses de propagation dans les tissus, on peut déterminer la distance qui sépare les différentes interfaces. On peut donc cartographier le milieu traversé par l’onde en fonction de la profondeur, et ce pour chaque ligne d’acquisition.
+For each emitted pulse and each corresponding echo burst, a pixel line can be drawn corresponding to the line which has been insonated in the medium. The time of arrival of the echo burst corresponds to the distance travelled by the wave. Knowing the travel time between emission and reception and the propagation speed in tissues, the distance between interfaces can be determined. So we can map the medium insonated by the wave as a function of depth for each propagation line.
 
 ![pixels](/images/pixels.png)  
-_exemple de résultat_
+_Figure 23: Grayscale conversion_
 
-On remarque que la valeur pour chaque point échantillonné suffit, plutôt que de calculer l’intégrale entre deux points échantillonnés. En effet, c’est la différence entre les valeurs de l’énergie contenue dans l’enveloppe \(donc la différence des milieux traversés\) qui nous intéresse, et non la valeur entière de l’intégrale. à revoir: intensité acoustique prop au log de la pression acoustique
-On peut aussi intégrer un programme pour passer le la forme conique de l’image reconstruite \(due à la position unique du transducteur qui balaye en rotation\) à une forme rectangulaire.
+It can be noted that the value at each sample point gives enough information rather than calculating the integral between two sample points.

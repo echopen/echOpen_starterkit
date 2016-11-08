@@ -1,47 +1,46 @@
-# Matériel
+# Hardware
 
-Pour fabriquer la sonde il faut le matériel type d&#39;un élecctronicien. Voici quelques conseils pour s&#39;équiper correctement. La liste suivante ( [LabTool](http://echopen.org/index.php/LabTools)) est une liste de composants et de consommables considérés comme essentiels et minimum requis à la création rapide d&#39;un laboratoire ou d&#39;un centre de recherche destiné au développement de la sonde Echopen.
+To build the probe, we have provided some tips for a good start. The following list (LabTool) gives components and consumables deemed essential and required to quickly start a laboratory or a research center to design the echOpen probe.
 
-| **Nom** | **Commentaires** | **Nom** | **Commentaires** |
+| **Name** | **Comments** | **Name** | **Comments** |
 | --- | --- | --- | --- |
-| **ÉQUIPEMENTS** 
-| écapeur thermique |   | Clés Allen (kit) |   |
-| Tournevis (Kit) | 1 vis + 35 têtes | Clés Torx (kit) | T6, 10, 15, 20, 25 |
-| Jeu de pince | Jeu de 5 pinces | Bread Bord | 2560 ports |
-|Pince coupante |   | Aération | Ventilateur + gaine |
-| Pince à dénuder |   | Multimètre |   |
-| Dremel + support | Dremel 4000/support 220: perçage, découpage, ponçage | Alimentation de laboratoire | Voltage : 0 - 30 VAmpérage : 0 - 5 A |
-| Pied à coulisse |   | Poste à souder |   |
-| Cutter |   | Lunettes de soudage |   |
-| Clé (kit) | Tailles : 8, 10, 11, 12, 13, 14, 17, 19, 22 | Pompe à dé-souder |   |
-| Douilles (kit) | 2 clés à cliquet + douilles de 4 à 6 (pas de 0.5), de 7 à 24 (pas de 1), 27, 30, 32 | Pince brucelle plastique |   |
-| **COMPOSANTS ET CONSOMMABLES** 
-| Amplificateur | 10 unités | Réservoir à flux | Tresse à souder |
-| CAN | 5 unités | Tapis à souder anti-statique |   |
-| CNA | 5 unites (10 MHz, 8 bits) | Kit de résistances |   |
-| Kit d&#39;inductances | 160 inductances de 1µH à 470 µH | Kit de condensateurs |   |
-| Carte prototype | 160\*100 | Bouteille de flux (100 mL) |   |
-| Adaptateur crocodile/banane |   | Micro controleur | Adapté pour Arduino |
-| Câble BNC-banane |   | Loupe |   |
-| Câble banane-banane |   | Moteur avec encodeur | Voltage : 12 VVitesse : 500 rpm1216 positions |
-| Kit de fils pour Bread Board |   | ou Moteur pas-à-pas |   Voltage: 12V  Vitesse:450-500 rpm  1080 positions |
-| Barette de connexion |   | Condensateur |   100 pF  470 pF  1000 pF |
-| Etain |   | Inducteur |   4.7 mH |
-| Vernis électronique |   | Transistor MOSFET |   |
-| Nettoyant de flux |   | Kit de gaine  thermorétractable |   |
+| **TOOLS** 
+| Heat gun |   | Allen keys set |   |
+| Screwdriver set | 1 drive and 35 different heads | Torx keys set | T6, 10, 15, 20, 25 |
+| Pliers set | 5 pliers set | Bread Bord | 2560 ports |
+|Cutting plier |   | Ventilation | ventilator + duct |
+| Wire stripper |   | Multimeter |   |
+| Dremel + support | Dremel 4000/support 220: drilling, cutting, sanding | Power supply | 0 - 30 V, 0 - 5 A |
+| Caliper |   | Soldering station |   |
+| Cutter blades |   | Soldering glasses |   |
+| Key set | Size: 8, 10, 11, 12, 13, 14, 17, 19, 22 | desoldering pump |   |
+| Sockets and spanners | 2 spanners + sockets 4 to 6 (0.5 step), 7 to 24 (1 step), 27, 30, 32 | Plastic tweezers |   |
+| **COMPONENTS AND CONSUMABLES** 
+| Amplifiers | 10 units | Flux tank | Desoldering wick |
+| ADC | 5 units | Soldering mat |   |
+| DAC | 5 units (10 MHz, 8 bits) | Resistors set |   |
+| Inductors set | 160 inductors from 1µH to 470 µH | Capacitors set |   |
+| Prototype board | 160\*100 | Flux bottle (100 mL) |   |
+| Crocodile to banana leads |   | Microcontroller | Compatible with Arduino |
+| BNC to banana lead |   | Magnifying glass |   |
+| Banana to banana leads |   | Motor with encoder | Voltage: 12 V Speed: 500 rpm 1216 steps |
+| Wire sets for Breadboard |   | or stepper motor |   Voltage: 12V Speed:450-500 rpm 1080 steps |
+| Terminal board |   | Capacitors |   100 pF 470 pF 1000 pF |
+| Soldering tin |   | Inductor |   4.7 mH |
+| Electronic varnish |   | MOSFET |   |
+| Flux cleaner |   | Heat-shrink set |   |
 
 _table 1: labtool_
 
 ![](images/materiel.JPG)
 
-_Figure 1: Pinces pour électronique, matériel d’atelier. Méthode de rangement du matériel._
+_Figure 1: Electronic pliers, workshop tools. Method of storage for equipment._
 
 ![breadboard](images/breadboard.JPG)
-_Figure 2: plateforme type de travail: le breadboard_
+_Figure 2: Typical platform of work: the breadboard_
 
 ![test](images/appareils_test.JPG)
 
-_Figure 3: Appareils de test_
+_Figure 3: Testing appliance_
 
-L’oscilloscope et le multimètre permettent d’accéder rapidement aux valeurs directement sur le circuit (il faut des câbles de connections pour prendre les mesures depuis le breadboard vers oscilloscope)
-Le GBF permettra de simuler les différentes entrées pour une fonction sans passer par le reste du circuit.
+The oscilloscope and multimeter can be used as electronic diagnostic tools to get quick access to the signals in different parts of the circuit in the board (test leads are required to get measurements on the breadboard). The signal generator allows simulating different inputs to part of the circuit.

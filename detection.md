@@ -1,37 +1,38 @@
-## Fonction détection
+## The detection function
 
-Dans un premier temps, il faut produire le signal qui va sonder le milieu et de récupérer l’écho réfléchi par les tissus rencontrés, sur toute la zone étudiée. Il faut réaliser les sous-fonctions émission et réception qui se font par l’intermédiaire d’un transducteur \(partie acoustique\). La sous-fonction balayage du milieu est réalisée par un moteur qui permet d’orienter le transducteur dans différentes directions \(partie mécanique\). Les commandes de ces sous-fonctions sont décrites dans la partie électronique.
+First, an acoustic signal needs to be generated for the insonification of the medium. Then the echoes reflected by the tissues encountered throughout the studied area need to be recorded. Two subfunctions, one for emission and one for reception, need to be created. Emission and reception are both realized with the transducer (see acoustic section). A sweeping subfunction is responsible for controlling the motor to scan the medium and direct the transducer in the desired directions (see mechanical section). The commands of these subfunctions are described in the electronic section.
 
 ![analyse fonctionnelle de la partie détection](/images/sensing.png)  
-_analyse fonctionnelle de la partie détection_
+_Figure 6: Functional analysis of the detection part_
 
-### Réalisation de la partie acoustique
+### Acoustic part
 
-#### Transducteur
+#### Transducer
 
 ![conversion électro-mécanique](/images/transducer.png)  
-_conversation électromécanique_
+_Figure 7: Piezoelectric effect_
 
-Un transducteur à ultrasons permet de convertir un signal électrique en un signal ultrasonore et inversement. Ceci est permis par l’intermédiaire d’un matériau piézo-électrique, qui a la capacité de se dilater et se contracter lorsqu’on lui applique une différence de potentiel. Le milieu qui entoure le piézoélectrique est alors affecté par cette déformation, et une onde s’y propage, comme lorsqu’on fait tomber une pierre dans l’eau. On peut ainsi créer une onde acoustique \(ultrasonore-quelques MHz\) à partir d’une différence de potentiel \(partie émission\). Réciproquement, lorsque le matériau piézoélectrique est déformé \(quand une onde acoustique le traverse par exemple\) une différence de potentiel apparaît entre ses deux faces. La déformation du milieu est traduite par un signal électrique: le piézoélectrique fait alors office de capteur \(partie réception\).
+An ultrasound transducer converts an electric signal into an ultrasound signal and vice versa. It is enabled by a piezoelectric element, which can expand and contract in response to a potential difference. The medium surrounding the piezoelectric element is affected by this deformation and a wave is created (like when a stone is dropped into water). Therefore, an acoustic wave can be created (in the ultrasonic range, several MHz) from a potential difference (emission part). Conversely, when the piezoelectric element is deformed (eg. when an acoustic wave propagate through it) a potential difference can be measured between its two faces. The medium deformation is converted into an electric signal: the piezoelectric element can be used as a sensor (reception part).
 
-Le piézoélectrique peut être traité comme un réseau à trois ports, avec deux ports mécaniques représentant l'avant et l'arrière de l'élément piézo-électrique ainsi que d'un port électrique représentant la connexion électrique de l'élément piézo-électrique à l'électronique du système [[11]](https://www.amazon.com/Acoustic-Waves-Devices-Processing-Prentice-Hall/dp/0130030473/168-7062977-8650263?ie=UTF8&*Version*=1&*entries*=0), [[12]](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=544509&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D544509). 
-Le choix du piézoélectrique est important: il fixe la fréquence des ultrasons émis. Celle-ci correspond au gain maximal dans le spectre d’émission\/réception du transducteur donné par le fabricant, eti dépend de la géométrie du matériau. La fréquence va déterminer la profondeur de pénétration de l’onde. Plus la fréquence est élevée, plus l’atténuation est importante pour une même distance.
+The piezoelectric element can be considered as a 3-port network, with two mechanical ports (being the front and the back of the element) and one electrical port (being the electronic connection to the system) [[11]](https://www.amazon.com/Acoustic-Waves-Devices-Processing-Prentice-Hall/dp/0130030473/168-7062977-8650263?ie=UTF8&*Version*=1&*entries*=0), [[12]](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=544509&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D544509). 
 
-| Fréquence des ultrasons \(MHz\) | Profondeur d’exploration maximale \(cm\) |
+The choice of the piezoelectric element is important as it sets the frequency of the emitted ultrasonic wave. It corresponds to the maximum gain in the emission/reception spectrum of the transducer (given by the manufacturer), and it depends on the geometry of the element. The working frequency influences penetration depth of the wave: the higher the frequency, the higher the attenuation of the wave for a given propagation distance.
+
+| Ultrasound frequency (MHz) | Maximum examination depth (cm) |
 | :--- | :--- |
 | 2,5 - 3,5 | &gt;15 |
 | 5 | 10 |
 | 7,5 | 5-6 |
 | 10-12 | 2-3 |
 
-_Table 3: Profondeur maximale de l'exploration échographique pour différentes fréquences [[2]](http://www.google.com/patents/WO2006077338A1?cl=en)._
+_Table 4: Maximum ultrasound examination depth for different frequencies [[2]](http://www.google.com/patents/WO2006077338A1?cl=en)._
 
-Lorsqu’il n’est pas en train d’émettre un signal, le transducteur passe en mode écoute: l’onde émise va être réfléchie, réfractée, dispersée et absorbée par les tissus. Une partie du signal émis est ainsi renvoyée dans la direction de la sonde et fait vibrer le transducteur, qui va convertir ce signal mécanique en signal électrique.
+When it is not emitting a signal, the transducer is used in listening mode. The emitted wave is reflected, refracted, scattered and absorbed by tissues, and part of the emitted signal is sent back towards the probe. It causes vibration of the transducer which converts the mechanical signal into an electrical signal
 
-Le matériau piézoélectrique excité par un [pulse](https://alienor134.gitbooks.io/echopen-guide-book/content/glossaire.html) analogique vibre de part et d’autre de ses faces, or l’onde qui est recherchée est celle qui se propage vers le milieu à explorer. Il faut donc absorber l’onde se propageant dans l’autre direction, d’autant plus qu’elle peut brouiller le signal si elle se réfléchit et revient vers le capteur piézoélectrique. Cette atténuation se fait à l’aide d’un backing.
+The piezoelectric element is excited by an analog [pulse](https://alienor134.gitbooks.io/echopen-guide-book/content/glossaire.html) and vibrates on both its sides. The wave of interest is the one which propagates inside the medium of interest. Therefore the wave propagating in the other direction needs to be attenuated, as it can mask the signal of interest if it is reflected inside the probe back to the piezoelectric element. This attenuation is achieved using a backing medium.
 
 ![backing](/images/need_backing.png)  
-_ondes se propageant de part et d'autre du piézoélectrique_
+_Figure 8: Ultrasound waves are emitted on both sides of the piezoelectric element_
 
 Il y a [désadaptation d’impédance](https://alienor134.gitbooks.io/echopen-guide-book/content/glossaire.html) entre le piézoélectrique et le milieu à explorer. Pour éviter des pertes d’énergie par réflexion à l’interface entre ces deux milieux, on dispose d’une couche d’[adaptation d’impédance](https://alienor134.gitbooks.io/echopen-guide-book/content/glossaire.html) disposée sur la surface du piézoélectrique orientée vers le milieu à explorer.
 

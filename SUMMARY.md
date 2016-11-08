@@ -12,5 +12,5 @@
    * [Signal Processing](signal_analysis.md)
    * [User Interface](user_interfacing.md)
    * [Testing equipment](bac_test.md)
-* [Glossaire](glossaire.md)
+* [Glossary](glossaire.md)
 

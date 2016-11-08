@@ -6,7 +6,7 @@
    * [Community tools](community_tools.md)
    * [Coding & Documenting](coding_&_documenting.md)
 * [Set up your own echOpen lab](setup_your_own_echopen_lab_md.md)
-   * [Matériel](materiel.md)
+   * [Hardware](materiel.md)
 * [Introduction à la technique](intro.md/readme.md)
    * [Detection](detection.md)
    * [Signal Processing](signal_analysis.md)

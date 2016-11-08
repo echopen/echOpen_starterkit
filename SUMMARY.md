@@ -7,7 +7,7 @@
    * [Coding & Documenting](coding_&_documenting.md)
 * [Set up your own echOpen lab](setup_your_own_echopen_lab.md)
    * [hardware](hardware.md)
-* [Introduction à la technique](intro.md/readme.md)
+* [Technical introduction](intro.md/readme.md)
    * [Detection](detection.md)
    * [Signal Processing](signal_analysis.md)
    * [User Interface](user_interfacing.md)

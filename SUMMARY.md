@@ -10,7 +10,7 @@
 * [Introduction à la technique](intro.md/readme.md)
    * [Detection](detection.md)
    * [Signal Processing](signal_analysis.md)
-   * [Interface avec l'utilisateur](user_interfacing.md)
+   * [User Interface](user_interfacing.md)
    * [Testing equipment](bac_test.md)
 * [Glossaire](glossaire.md)
 

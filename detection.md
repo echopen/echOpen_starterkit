@@ -49,106 +49,105 @@ As each piezoelectric material has a specific resonant frequency which sets the 
 
 ![graphique piézos](/images/piezoelement.png)
 
-| Piézoélectriques | polymères | Monocristaux | Piézocéramiques |
+| Piezoelectric material | Polymers | Single crystals | Piezoceramics |
 | :--- | :--- | :--- | :--- |
-| Avantages | **Impédance acoustique faible**: \(~4 MRayl. Idéal pour l’adaptation d’impédance entre le transducteur et les tissus \(~1,5 MRayl\)  **Constante diélectrique faible** idéal pour l’adaptation d’impédance électrique | **Bon couplage électromécanique** Meilleur contraste de l’image  **Constante diélectrique faible**  idéal pour les transducteurs mono-éléments sensibles à grande ouverture | **Coefficients de couplage électromécanique élevés** |
-| Défauts | **Coefficients de couplage faibles** | **Impédance acoustique importante** | **Impédance acoustique élevée** **grandes constantes diélectriques** |
+| Pros | Low acoustic impedance (~4 MRayl). Ideal for impedance matching between the transducer and tissues (~1.5 MRayl). Low dielectric constant ideal for electric impedance matching | Fair electromechanical coupling Better contrast of the image Low dielectric constant ideal for sensitive single element transducers  with large aperture | High electromechanical coupling |
+| Cons | Low coupling coefficients | High acoustic impedance | High acoustic impedance
+High dielectric constant |
 
-_comparaison des propriétés de différents matériaux piézoélectriques_
+_Table 5: Properties of piezoelectric materials_
 
-##### Sélection du backing
+##### Backing selection
 
-On cherche à atténuer au maximum les ondes se propageant du mauvais côté du piézoélectrique. Il faut pour cela un matériau fortement inhomogène. Les résultats de Desilet et al \[22\] et expériences d’EchOpen montrent qu’il faut privilégier un matériau de faible impédance. \(de 3 à 5 MRayl\) pour améliorer la forme du pulse.
+The backing attenuates the acoustic waves propagating from the back of the piezoelectric as much as possible. In order to achieve this a medium with high inhomogeneity can be used. Results from Desilet et al. [22] and experiments conducted by echOpen show that a material with low acoustic impedance (3 to 5 MRayl) is better to improve the pulse shape.
 
-##### Sélection de l’adaptation d’impédance
+##### Matching impedance selection
 
-Elle permet d’éviter une réflexion de l’onde à l’interface piézoélectrique\/surface à sonder. La valeur de l’impédance du milieu d’adaptation, dans le case de régime impulsionnel, pour une seule lame d’adaptation, doit vérifier:
+It is used to minimise the reflection of the acoustic wave at the interface transducer/insonated medium. For a pulsed regime and a single adaptation layer, the impedance of the matching medium needs to verify:
 
 ![](/images/impedance.png)
 
-Les lames généralement utilisées sont des lames quart d’onde: l’épaisseur correspond au quart de la longueur d’onde caractéristique du piézoélectrique dans le milieu de propagation à explorer.
+The matching layer is generally a quarter wave plate: the thickness is equal to a quarter of the characteristic wavelength of the piezoelectric element in the insonated medium.
 
-### Réalisation de la partie mécanique
+### Mechanical part
 
-#### Sonde à balayage
+#### Scanning probe
 
 ![](/images/Sonde_a_balayage.png)
 
-Lorsque les ultrasons ne sont envoyés que dans une seule direction \(un seul transducteur, un seul tir\), l’échographe n’obtient qu’une ligne d’image. Afin d’avoir une image complète, il faut effectuer un balayage sur la surface à échographier. Si, autrefois, c’était au praticien de faire le balayage, de nos jours les sondes le font automatiquement. C'est grâce à l'automatisme du balayage que l'on dit souvent que l'échographie est "dynamique".
+When the ultrasonic wave is emitted in a single direction (one transducer and one pulse), the ultrasound scanner can only record one line of the frame. In order to get a full frame, a scan of the studied area is needed. While in the past the doctor needed to do it manually, nowadays probes realise it automatically. The automatisation of the scanning process is the reason why people often talk about “dynamic” ultrasound imaging.
 
-#### Moteur
+#### Motor
 
-Le moteur permet d’effectuer le balayage de la surface à explorer. Il faut adapter le type de moteur au balayage choisi [[23]](http://echopen.org/index.php/Balayage). On fixe le \(ou les\) transducteurs sur la tête du moteur. Il faut savoir qu'un balayage oscillant par le moteur implique des accélérations et des décelerations qui bruitent le signal. On peut néanmoins transformer la rotation du moteur en mouvement pendulaire.
+The motor enables scanning the area to explore. The motor type has to be adapted to the chosen scanning method [[23]](http://echopen.org/index.php/Balayage). The transducer is fixed on the motor’s head or on a movement converter part. It is important to realise that the oscillating scan by the motor implies accelerations and decelerations which can lead to noise in the signal. However the motor’s rotation can be modified into a pendulum motion.
 
-Le moteur utilisé doit être asservi en vitesse, angle, précision angulaire.
-Un moteur à courant continu peut être utilisé, à condition d’avoir un bon encodeur pour toujours connaître précisément la position. Le moteur synchrone pas-à-pas est moins contraignant en terme d’asservissement et permet une grande précision angulaire, car on peut faire des micro-pas.
+The speed, angle and angular accuracy of the motor must be controlled. A DC motor can be used provided that you have a good encoder to continuously and accurately track its position. The synchronous stepper motor is less restrictive in terms of control and allows a better angular accuracy, as micro-steps can be used.
 
-_vitesse de balayage_: constante, 7,5 tours\/sec  
-_déplacement_: horaire et anti-horaire \(oscillations\)  
-_précision_: de 30 à 1060 pas en 60°
+_scanning speed_: constant, 7.5 rotation/sec
+_motion_: clockwise and anticlockwise (oscillations)
+_accuracy_: from 30 to 1060 step over 60°
 
 ![cahier des charges du moteur](/images/charges_motor.png)  
-_exemple de cahier des charges_
+_Figure 10: Example of specifications_
 
-### Réalisation de la partie électronique
+### Realisation of the electronic section
 
-#### Alimentations
+#### Power supplies
 
-##### Alimentation générale
+##### General power supply
 
-Pour les tests, il faut privilégier une alimentation continue de laboratoire plutôt qu’une pile. En effet le débit de courant étant contrôlé, on évite de griller les composants au cours du montage avec une telle alimentation. En revanche, le pile sera préférable à terme, une fois la sonde fonctionnelle,  car il y a moins de bruits.
+For testing, it is advised to use a DC power supply rather than a battery. It allows for current control and avoid damaging components. However, once the probe is functional, a battery is better to reduce the noise.
 
-##### Circuit d’adaptation
+##### Supply circuit
 
-Tous les composants qui seront utilisés par la suite ne fonctionnent pas à la même tension, il faut donc un circuit pour diviser la tension d’entrée qui est de l’ordre de 18V.
+As each components do not require the same voltage, a converter is needed to divide the 18V input voltage.
 ![cahier des charges alimentation](/images/converter_DC.png)  
-_Fonction attendue, exemples de valeurs._
+_Figure 11: Desired function, example of values_
 
-##### Commande du moteur
+##### Motor control
 
-Le moteur est commandé par un microcontrôleur, qui intervient dans d’autres sous-fonctions afin de synchroniser les sous-fonctions. Par exemple l’émission du pulse et la commande du moteur peuvent être synchronisées.
-Il faut faire attention au courant d’alimentation au cours des tests pour ne pas griller le moteur!
+The motor is driven via a microcontroller, which is also used in other subfunctions for synchronisation purpose. For example, the pulse emission and the motor control can be synchronized. Care must be taken with use of the current supply in order to avoid frying the motor!
 
 ![fonction attendue](/images/commande_moteur.png)  
-_Fonction attendue_
+_Figure 12: Motor control_
 
-##### Commande du pulse
+##### Pulse command
 
 ![fonction attendue](/images/pulsing.png)  
-_Fonction attendue_
+_Figure 13: Pulse emission_
 
-###### Circuit haut voltage
+###### High voltage circuit
 
-Pour produire le pulse qui va simuler le piézoélectrique, il faut atteindre -100V car le gain de la fonction caractéristique du transducteur est faible. Si on veut produire une onde acoustique de l’ordre de 10% de la pression atmosphérique, il faut une telle tension en entrée. [[24]](http://www.sfrnet.org/rc/org/sfrnet/htm/Article/2011/20110524-112842-171/src/htm_fullText/fr/polyBasesPhysiques_14.pdf)
+To provide the excitation pulse to the piezoelectric element, a voltage of -100V is required as the transducer characteristic function is low. [[24]](http://www.sfrnet.org/rc/org/sfrnet/htm/Article/2011/20110524-112842-171/src/htm_fullText/fr/polyBasesPhysiques_14.pdf)
 
 ![](/images/hvc.jpg)  
-_Fonction attendue_
+_Figure 14: High voltage generation_
 
 ###### Pulser
 
-A partir d’une commande sous forme d’un pulse logique et d’une alimentation continue de -100V, on génère un pulse de -100V de la même durée. On doit passer par l’intermédiaire d’un pulser car les circuits de commande qui permettent de créer un pulse logique ne fonctionnent pas à des tensions si élevées.
+Using a logical pulse command (typically half the duration of the acoustic period)  and a continuous supply of -100V, a -100V pulse of same duration is generated. A pulser is needed as command circuits cannot create a logical pulse at such high voltage.
 
 ![](/images/Pulser.PNG)  
-_Fonction attendue_
+_Figure 15: Pulser_
 
-###### Commande du pulser
+###### Pulser command
 
-La durée du pulse doit correspondre à la moitié de la période caractéristique du transducteur pour obtenir le meilleur taux de conversion \(la réponse attendue est sous forme d’un pulse ultra-sonore\).
-La fréquence d’émission de pulse est choisie en fonction de la vitesse du moteur, et de la précision souhaitée. Pour un moteur pas-à-pas on peu décider d’envoyer un pulse tous les X pas. La commande du pulse doit alors être couplée à la commande du moteur. Elle est contrôlée par un microcontrôleur.
+The pulse duration must be equal to half of the characteristic time of the transducer to get the best conversion rate (the expected response is an ultrasonic pulse). The repetition rate of the pulse is chosen depending on the motor’s speed and the desired accuracy. For a stepper motor, we can choose to emit one pulse every X steps. The pulse command must be coupled to the motor command. It is controlled by the microcontroller.
 
-### Mode réception
+### Reception mode
 
-#### Premier filtrage
+#### First filtering
 
-Réponse d’un transducteur à un pulse électrique:  
+Transducer response to an electrical pulse:  
 ![](/images/reponse_trans.png)
+_Figure 16: Raw output signal across the transducer_
 
-**Explication**: la conversion de l’énergie électrique en énergie mécanique n’est pas totale: lorsqu’on envoie un pulse sur le piézoélectrique, une grande partie de l’énergie électrique est réfléchie. La réponse impulsionnelle électrique sous simulation électrique du transducteur n’est pas une impulsion pure: il y a une résonance de temps caractéristique long. Il est si long que lorsque les échos en retour de l’onde sonore, qui vont exciter le piézoélectrique, vont produire une réponse qui va s’ajouter à celle de résonance. Or ce sont ces échos qui nous intéressent. Comme la fréquence de résonance est faible, on utilise un filtre passe-haut pour couper la résonance et ne récupérer que le signal d'intérêt. Il faut absolument effectuer ce premier filtrage car la résonance basse-fréquence est de forte amplitude et risque de griller les composants des circuits suivants.
+**Analysis**: a low frequency signal (nearly 500 kHz) appears across the transducer with high amplitude when it is excited by a pulse. This signal is not of interest and have a higher amplitude than the measured echo so we filter it with a high pass filter.
 
 ![Signal d’intérêt](/images/reponse_filtre.jpg)  
-_Signal d'intérêt_
+_Figure 17: Filtered output signal across the transducer_
 
-On ne veut analyser que l’écho retransmis par les tissus après qu’on ait envoyé un pulse. Tout le reste n’est que du bruit. L’acquisition de données est géré par un microprocesseur. Une solution est de synchroniser le début de l’acquisition avec l’émission d’un pulse, et de fixer la durée d’écoute dt en fonction de la profondeur de pénétration de l’onde dans les tissus \(liée à la fréquence fc\), en considérant comme vitesse moyenne de propagation de l’onde sonore dans les tissus la vitesse d’une onde acoustique dans l’eau. De plus, il faut protéger les circuits suivants de la réponse électrique du transducteur au pulse \(cette réponse est de l’ordre de 100V et les hautes fréquences du pulse de réponse n’ont pas été filtrées par le passe-haut\). On utilise pour cela un T\/R switch.
+Only the echo reflected by tissues is needed to be analyzed. The remaining part of the signal is considered as noise. The data acquisition is managed by a microprocessor. One can synchronize the beginning of acquisition with the pulse emission, and limit the duration of reception dt with respect to the penetration depth of the wave in tissues (related to the frequency fc), considering an average propagation speed of acoustic waves in tissues equal to the speed of an acoustic wave in water. The next circuits needs to be protected from the electric response of the transducer to the pulse (this response is of the order of 100V and high frequencies are not filtered by the high-pass filter). To do so, a T/R switch is used.
 
 ![emission_reception](/images/ER_modes.png)  
-_Différents modes du circuit analogique_
+_Figure 18: Scanned angle_

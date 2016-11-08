@@ -1,4 +1,4 @@
-![](viewme.png)## Fonction interface
+![](viewme.png)## _Figure 24: User interface function_
 
-### Affichage de l’image en temps réel
-### Interface utilisateur
+### Real time image display
+### User interface

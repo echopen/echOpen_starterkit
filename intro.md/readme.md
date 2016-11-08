@@ -31,54 +31,52 @@ These numbers show that there can be large impedance differences in the body suc
 
 ## Architecture of the whole system
 
-L'appareil permettant de réaliser des échographies est appelé échographe. Il est constitué :
+The ultrasound scanner is composed of :
 
-* D’un transducteur permettant l'émission et la réception d'ultrasons  
-* Du système analogique et numérique qui transforme le signal reçu en image  
-* D'une console de commande permettant d’effectuer différents réglages   
-* D'un système d'alimentation et de gestion des données des données.  
+* A transducer to emit and receive ultrasonic waves
+* An analog and digital system to convert the received signal into an image
+* A control console to modify various settings
+* A power supply and a data management system 
 
 ![analyse fonctionnelle](/images/functional_analysis.jpg)
 
-Pour réaliser une échographie, le médecin applique un gel sur la peau, ce gel est appelé gel de couplage. Ce gel permet d’améliorer la transmission du son entre la sonde et le corps.
+To conduct an ultrasound exam, the physician applies a gel on the skin called coupling gel. It helps to improve ultrasound transmission between the probe and the body.
 
-## Histoire de l'échographie en temps réel
+## History of real time ultrasound
 
-Le premier scanner temps réel en deux dimensions \(ou B-scanner\) a été développé par Walter Krause et Richard Soldner. Il est commercialisé sous l'appellation Vidoson® par Siemens Medical Systems Allemagne en 1965. Le Vidoson® construit l’image échographique à l’aide de trois transducteurs rotatifs placés face à un miroir parabolique \(ainsi le milieu est scanné selon des lignes parallèles\). Les transducteurs et le miroir sont couplés ensemble par de l’eau, on a ainsi une bonne adaptation d’impédance avec le corps. Les images sont constituées de 120 lignes et la cadence est de 15 images par seconde.  
+The first real-time 2D scanner (or B-scanner) was developed by Walter Krause and Richard Soldner. It was marketed as Vidoson® by Siemens Medical Systems Germany in 1965. Vidoson® built the ultrasound image using three rotating transducers facing a parabolic mirror (allowing to scan the medium along parallel lines). The transducers and the mirror are coupled using water, enabling a good impedance matching with the body. Images are made of 120 lines and the sampling rate is of 15 frames per second.
+
 XPROBLEME  
-James Griffith et Walter Henry ont produit un échographe temps réel à balayage mécanique en 1973. Le transducteur insone un secteur de 30 degrés, avec une image de bonne qualité. Le design de cette sonde a été décrite comme l'une des étapes clé dans le développement de l'échocardiographie. Le premier échographe commercial équipé d’une barrette linéaire de transducteurs, le "Multiscan system", a été produit en 1972 par Nicolaas Bom, Paul Hugenholtz en collaboration avec une société néerlandaise \(Organon Teknika\). Cet échographe était principalement utilisé en cardiologie.
 
-Vers le milieu des années 1980, les transducteurs abdominaux curvilignes ou convexes sont apparus sur le marché. Ils ont l’avantage d’avoir un meilleur ajustement au niveau de l'abdomen et d’avoir un champ de vision plus large. Les sondes curvilignes ont complètement remplacé les sondes linéaires à la fin des années 1980. Ensuite, l’amélioration de la résolution et de la qualité globale de l'image c’est concentrée principalement sur l'augmentation du nombre de transducteurs \(de 64 à 128\). Des travaux ont également été fait sur la technologie des transducteurs \(large bande et large gamme dynamique\), l’ouverture des barrettes \(plus de transducteurs tirent en même temps\), des rapidités de calcul plus importantes, les algorithmes de focalisation en réception \(augmentation du nombre de tâches focales le long de la ligne de mesure\), incorporation du TGC \(contrôle du gain temps réel\) [[3]](http://www.google.com/patents/WO2006077338A1?cl=en).
+James Griffith and Walter Henry produced a mechanical oscillating real-time ultrasound scanner in 1973. The probe produce an image of 30 degree sectoral with good quality. The design of that probe was described as one of the key milestones in the development of echocardiography. The first commercial ultrasound scanner using a linear array of transducers, the "Multiscan system", was produced in 1972 by Nicolaas Bom in collaboration with Paul Hugenholtz and a Dutch company (Organon Teknika). This device was mainly aimed at cardiac investigation.
+In the mid-80s, curvilinear or convex abdominal transducer arrays appeared on the market. This allowed for a better fit on the abdomen and a wider field of view. The curvilinear probes completely replaced linear array by the end of the 1980s. The improvement of resolution and global quality of the image mainly focused on increasing the number of transducers (from 64 to 128). Some work was also conducted on transducer technology (wide band and large dynamic range), the aperture of the arrays (more transducer emit at the same time), increased processing speed, focusing algorithms for reception (increase the number of focus points along the measuring line), integration of the TGC (real-time gain control)[[3]](http://www.google.com/patents/WO2006077338A1?cl=en).
 
-Dans les années 1990 les avancées importantes ont été [[4]](http://www.google.com/patents/WO2006077338A1?cl=en):
+In the 1990s the main progress have been in the following [[4]](http://www.google.com/patents/WO2006077338A1?cl=en):
 
-* Le traitement du signal est devenu entièrement analogique. On a la chaîne suivante :
-  **\[transducteur\] -&gt; \[beamformer\] -&gt; \[traitement du signal\] -&gt; \[convertisseur d’image\] -&gt; \[moniteur\]**
-
-* L'utilisation de transducteurs larges bandes avec une grande ouverture. Le nombre de canaux dans les systèmes haut de gamme va jusqu'à 256 et plus récemment  1024 \(barrette 2-D\).
-
-
-* La phase des échos est traitée en plus de l'amplitude avec la reconstruction cohérente des images. La technique améliore de deux fois la quantité des données donnant des images haute résolution. La cadence d’imagerie est également augmentée.  
-
-* L'avènement de la technique d’imagerie utilisant les harmoniques \(multiples de la fréquence de travail\) phénomène non-linéaire dû à la propagation des ondes dans les tissus.  
+* Signal processing has become completely analog on the full chain: [transducer] -> [beamformer] -> [signal processing] -> [image converter] -> [screen]
+* The use of broadband transducers with a large aperture. The number channels in high-end systems reaches 256 and more recently 1024 (for 2D arrays).
+* The phase of the echoes is considered in addition to the amplitude by using coherent reconstruction of images. This technique doubles the available information leading to high resolution images. The frame rate is increased too.  
+* The advent of imaging techniques using harmonics (multiples of the working frequency), a nonlinear phenomenon caused by the propagation in tissues.  
 
 ![différentes dimensions](/images/diffecho.jpg)
+Figure 5: example of 2D and 3D ultrasound imaging
 
-Les progrès technologiques ont eu un impact significatif sur l’évolution des échographies, en ce qui concerne le traitement d'image et les sondes [[5]](http://www.ncbi.nlm.nih.gov/pubmed/9602842),[[6]](http://www.brl.uiuc.edu/Publications/1998/OBrien-JJAP-2781-1998.pdf). La technologie des sondes en particulier, qui a évolué des systèmes mono-éléments \(sonde sectorielle mécanique\) à des barrettes linéaires et finalement des systèmes 3D en temps réel.
+Technological advances have had a significant impact on the evolution of ultrasound, thanks to improvement in image processing and probes [[5]](http://www.ncbi.nlm.nih.gov/pubmed/9602842),[[6]](http://www.brl.uiuc.edu/Publications/1998/OBrien-JJAP-2781-1998.pdf). This is especially true for probe technology which has evolved from single element systems (mechanical sectorial probe) to linear array and finally real-time 3D systems.
 
-Récemment sont apparues les sondes compatibles avec un smartphone \(2009\) [[7]](http://uix.sagepub.com/content/30/1/21.short),[[8]](https://www.technologyreview.com/s/413222/ultrasound-to-go/). Elle est uniquement compatible avec Windows \(Microsoft, Redmond, Washington\). Les défis technologiques qui ont dus être surmontés étaient principalement la consommation d'énergie de la batterie et la vitesse de transfert des données. Le second était la création des algorithmes nécessaires à l'affichage de l'image sur l'écran du smartphone. Un dispositif a été approuvé pour une utilisation par la Food and Drug Administration \(FDA\) en 2011 après avoir rencontré des exigences réglementaires strictes pour les applications médicales [[9]](http://mobihealthnews.com/10165/fda-approves-mobisantes-smartphone-ultrasound/),[[10]](http://www.engineeringforchange.org/ultrasound-is-now-on-smart-phones-engineering-for-change/). Aujourd'hui une variété de sondes spécialisées ont été développées  couvrant une gamme de fréquences de 2 à 18 MHz.
+More recently, probes compatible with smartphone have appeared (2009) [[7]](http://uix.sagepub.com/content/30/1/21.short),[[8]](https://www.technologyreview.com/s/413222/ultrasound-to-go/). They can only be used with a Windows OS (Microsoft, Redmond, Washington). The main technological challenges to be overcome were the energy consumption of the battery and the speed of data transfer. Besides some new algorithms were required to display the image on a smartphone screen. A device has been approved by the Food and Drug Administration (FDA) in 2011 after clearing strict guidelines for medical applications [[9]](http://mobihealthnews.com/10165/fda-approves-mobisantes-smartphone-ultrasound/),[[10]](http://www.engineeringforchange.org/ultrasound-is-now-on-smart-phones-engineering-for-change/). Nowadays, a diversity of specific probes has been developed functioning on frequencies from 2 to 18 MHz.
 
-Utilisation médicale des ultrasons
-L'échographie permet d’étudier de nombreux organes de l'abdomen, du petit bassin, du cou \(thyroïde, foie, rate, pancréas, reins, vessie\) ainsi que les vaisseaux sanguins, les ligaments et le cœur. Elle permet plus précisément de rechercher des anomalies \(telles que des tumeurs, des kystes et des malformations\) et de guider des prélèvements \(ponctions\).
+## Medical use of ultrasound
+Ultrasound allows the study of many organs in the abdomen, the pelvis, the neck (thyroid, liver, spleen, pancreas, kidney, bladder) as well as blood vessels, ligaments and the heart. It enables a more precise look at abnormalities (such as tumours, cysts and malformations) and to guide for taking samples (puncture).
 
-Thérapeutique :
+Therapeutics :
 
-* Lithotriteur \(désintégration de calculs rénaux\)  
-* Le traitement thermique \(ligaments, tendons, etc.\)      
-* Ultrasons focalisés à haute intensité \(chirurgie, par exemple dans le cerveau profond\)  
+* Litothripsy (disintegration of kidney stones)
+* Heat treatment (ligaments, tendons...)
+* High intensity focused ultrasound (surgery, eg. in the deep brain)  
 
-Diagnostic :
+Diagnosis :
 
-* L'échographie \(cadence &gt; 30 images \/ seconde\)\)  
-* Technique Doppler \(mesure de la vitesse d'écoulement du sang\) de densitométrie osseuse \(200 kHz 800 kHz\)  
+* Ultrasound (frame rate more than 30 images per second)
+* Doppler imaging (measure the blood flow velocity), bone densitometry technique (200 kHz to 800 kHz)
+
 

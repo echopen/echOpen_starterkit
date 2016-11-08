@@ -8,7 +8,7 @@
 * [Monter un laboratoire de type EchOpen](setup_your_own_echopen_lab_md.md)
    * [Matériel](hardwaremd.md)
 * [Introduction à la technique](intro.md/readme.md)
-   * [Détection](detection.md)
+   * [Detection](detection.md)
    * [Analyse du signal](signal_analysis.md)
    * [Interface avec l'utilisateur](user_interfacing.md)
    * [Testing equipment](bac_test.md)

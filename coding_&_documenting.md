@@ -28,6 +28,14 @@ Here are the main repos you should be aware of
   * web tools
 [signal processing web server](SignalProcessingWebServer) -> this folder hosts the web server that enables getting the data from our ultrasound machine dived into our aquarium. This will be put on online production in the following weeks (this is written 08.11.16)
 
+[echopen-leaderboard](https://github.com/echopen/kit-soft/tree/master/echopen-leaderboard) -> this is a website, technically a Django App, that enables 
+1. upload of image denoising algorithms. 
+These will be processed against our benchmark images, from which our backend throws  
+  - ultrasound quality metrcis
+  - CPU and memory metrics
+2. update of a leaderboard based on the aggregation of the latter metrics
+ 
+
 you'll find also in the kit-soft repos other folder taht will be deprecated and cleaned soon
 
 * [echopen.github.io](https://github.com/echopen/echopen.github.io) : this is an example of static site that is automatically generated for our events. Other static sites are to come, they will automatically generate documentation from the repos.

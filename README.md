@@ -23,7 +23,7 @@ As each participant has different interests, skills and disponibilities, a proje
 
 The use of a wiki and a github organization, gathering all the information (techniques, processes, support material, ...), and online collaboration tools (GitHub, Slack, …), enables contributors to quickly grasp challenges or specific questions and provide solutions according to a detailed development plan and their disponibilities. Some key partners brought resources such as finance, equipment, work environment, etc. to support the advancement of the project and achieve its goals.
 
-If you wish to join this community, this guide can help you understand the project and its main challenges that we are tackling. With this guide, we aim to accompany you to contribute to the echOpen project by installing your own hardware kit and/or your dev environement with the support of the expertise and experience of the echOpen community.
+If you wish to join this community, this guide can help you understand the project and its main challenges that we are tackling. With this guide, we aim to accompany you to contribute to the echOpen project by installing your own hardware kit and/or your dev environement with the support of the expertise and experience of the echOpen community. 
 
 Enjoy your reading !
 

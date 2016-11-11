@@ -2,7 +2,7 @@
 #  Presentation
 ## What is echOpen ?
 
-echOpen is an open and collaborative project, led by a multidisciplinary core of experts and senior professionals in order to make medical imaging technologies open and accessible. The aim is to build a functional low-cost (affordable) and open source echo-stethoscope (ultrasound probe) connected to a smartphone, enabling a radical change in diagnostic orientation in hospitals, general medicine and medically underserved areas. This project is intended for health professionals in northern and southern countries. 
+echOpen is an open and collaborative project, led by a multidisciplinary core of experts and senior professionals in order to make medical imaging technologies open and accessible. The aim is to build a functional low-cost (affordable) and open source echo-stethoscope (ultrasound probe) connected to a smartphone, enabling a radical change in diagnostic orientation in hospitals, general medicine and medically underserved areas. This project is intended for health professionals in northern and southern countries.
 
 ## echOpen in brief
 ![echOpen history](echopen-history.png)

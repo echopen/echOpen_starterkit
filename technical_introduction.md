@@ -36,7 +36,7 @@ The ultrasound scanner is composed of :
 * A transducer to emit and receive ultrasonic waves
 * An analog and digital system to convert the received signal into an image
 * A control console to modify various settings
-* A power supply and a data management system 
+* A power supply and a data management system
 
 ![analyse fonctionnelle](/images/functional_analysis.jpg)
 
@@ -80,5 +80,4 @@ Diagnosis :
 * Ultrasound \(frame rate more than 30 images per second\)
 * Doppler imaging \(measure the blood flow velocity\), bone densitometry technique \(200 kHz to 800 kHz\)
 
-
-
+## Safety

@@ -81,3 +81,9 @@ Diagnosis :
 * Doppler imaging \(measure the blood flow velocity\), bone densitometry technique \(200 kHz to 800 kHz\)
 
 ## Safety
+
+Among various modalities of medical imaging, ultrasound is characterized by the non-ionizing nature of the acoustic waves (unlike X-ray or isotopic imaging).
+The absence of ionising radiations, potentially harmful for patients and staffs, conducts to less legal regulation of ultrasound devices use. Moreover the imaging properties of ultrasound imaging and the different safety context leads to promote this modality in various medical situations, including pre-natal imaging. (In France, imaging modality recommendations are summarized here : http://gbu.radiologie.fr/)
+
+**WIP**
+*LA*

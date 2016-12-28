@@ -36,7 +36,7 @@ The ultrasound scanner is composed of :
 * A transducer to emit and receive ultrasonic waves
 * An analog and digital system to convert the received signal into an image
 * A control console to modify various settings
-* A power supply and a data management system 
+* A power supply and a data management system
 
 ![analyse fonctionnelle](/images/functional_analysis.jpg)
 
@@ -80,5 +80,15 @@ Diagnosis :
 * Ultrasound \(frame rate more than 30 images per second\)
 * Doppler imaging \(measure the blood flow velocity\), bone densitometry technique \(200 kHz to 800 kHz\)
 
+## Safety
 
+### Introduction
 
+Among various modalities of medical imaging, ultrasound is characterized by the non-ionizing nature of the acoustic waves (unlike X-ray or isotopic imaging).
+The absence of ionising radiations, potentially harmful for patients and staffs, conducts to less legal regulation of ultrasound devices use. Moreover the imaging properties of ultrasound imaging and the different safety context leads to promote this modality in various medical situations. (In France, imaging modality recommendations are summarized [here](http://gbu.radiologie.fr/).)
+
+While percepted as one of the safest medical imaging modalities, the effects of transfered energy to the medium and the safety limits of ultrasounds uses are legitimate questions.
+
+### Physical and biological effects of ultrasounds exposure
+
+### Metrics

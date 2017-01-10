@@ -1,0 +1,73 @@
+%\begin{titlepage}
+\thispagestyle{empty}
+%\setlength{\baselineskip}{0.8\baselineskip}
+
+%\voffset 0,6cm
+%\hoffset -30.5mm
+\noindent
+
+\vspace*{0.6cm}
+
+\begin{center}
+{\bf\huge }
+\noindent\vspace*{0,5cm}
+
+{}
+\noindent\vspace*{0,5cm}
+
+{\bf\huge }
+\noindent\vspace*{0,5cm}
+
+
+\noindent\vspace*{1cm}
+
+
+\noindent\vspace*{1cm}
+
+{}
+\noindent\vspace*{0,5cm}
+
+
+\noindent\vspace*{0,5cm}
+
+
+\noindent\vspace*{1cm}
+
+{\bf --------}
+\noindent\vspace*{0.2cm}
+
+{\bf \Large Introduction to acoustic imaging}
+\noindent\vspace*{0,2cm}
+
+{\bf --------}
+\noindent\vspace*{0,9cm}
+\end{center}
+
+\noindent
+
+\vspace*{0.4cm}
+
+\noindent
+
+\noindent\vspace*{0.4cm}
+{\bf echOpen}
+\noindent
+
+
+\vspace*{0.4cm}
+
+\noindent
+{\bf\Large CC BY-SA}
+\noindent\vspace*{0,5cm}
+
+\noindent
+
+
+%\vfill
+
+
+%\newpage
+
+
+
+%\end{titlepage}

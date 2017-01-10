@@ -26,3 +26,32 @@ There is two types of acoustic waves, the longitudinal waves (Fig. 2) also named
   [Medium at rest.<span data-label="fig:at_rest"></span>]: ./acoustic_imaging_src/image/at_rest.png "fig:"
   [Longitudinal wave.<span data-label="fig:Pwave"></span>]: ./acoustic_imaging_src/image/Pwave.png "fig:"
 
+ ![Shear wave.<span data-label="fig:Swave"></span>]
+
+ *Figure 3: shear wave.*
+
+In the rest of the document, we will only consider longitudinal waves.
+
+  [Shear wave.<span data-label="fig:Swave"></span>]: image/Swave.png "fig:"
+
+Mathematical formulation
+------------------------
+
+In acoustic, a fluid medium is describe by two mecanical parameters: the mass density *ρ* and the bulk modulus *κ*. The bulk modulus relate the change of volume of a medium to the isostatic pressure apply on it. The velocity of the acoustic wave *c* is:
+$$c=\\sqrt{\\dfrac{\\kappa}{\\rho}},
+ \\label{eq:speed of sound}$$
+ for example, for the water we have: *ρ* = 1000 kg.m<sup>−3</sup>, *κ* = 2.19 MPa and *c* = 1480 m.s<sup>−1</sup>.
+
+The mathematical formulation is obtained by solving the Helmholtz equation, for exemple, the acoustic pressure *p*(*x*,*t*) can be expressed as:
+$$p\\left(x,t\\right)=\\left(A^{+}\\e^{\\im kx}+A^{-}\\e^{-\\im kx}\\right)\\e^{-\\im 
+\\omega t},
+ \\label{eq:math 1D formulation}$$
+ $A^{+}\\e^{\\im kx}$ is a wave of amplitude *A*<sup>+</sup>, propagating toward the positive *x*, $A^{-}\\e^{-\\im kx}$ is a wave of amplitude *A*<sup>−</sup>, propagating toward the negative *x*. $k=\\dfrac{\\omega}{c}$ is the wavenumber, *ω* = 2*π**f* the angular pulsation and *f* the frequency.
+
+When we make an echographic image, we are intresting only on the intensity of the wave:
+$$I=\\dfrac{1}{2}\\Re\\left\[p\\left(x,t\\right)v^{\*}\\left(x,t\\right)\\right\],
+ \\label{eq:acoustic intensity}$$
+ where *v*(*x*,*t*) is the velocity of the particle, and *x*<sup>\*</sup> represent the complex conjugate of *x*. It can be shown with the Euler’s equation that the intensity is directly proportional to the square modulus of the pressure.
+
+Refraction and diffusion of acoustic waves
+------------------------------------------

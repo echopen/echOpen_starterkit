@@ -1,3 +1,5 @@
+# Acoustic imaging (basics) 
+
 The pdf version of this document can be download ['here'](./acoustic_imaging_src/acoustic.pdf).
 
 In this section, we will explain some basis of the acoustic theory to understand the propagation of acoustic waves and the echographic process.

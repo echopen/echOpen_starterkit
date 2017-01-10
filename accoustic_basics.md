@@ -32,4 +32,10 @@ There is two types of acoustic waves, the longitudinal waves (Fig. 2) also named
 
 In the rest of the document, we will only consider longitudinal waves.
 
+In the rest of the document, we will only consider longitudinal waves.
+
+  [Shear wave.<span data-label="fig:Swave"></span>]: image/Swave.png "fig:"
+
+Mathematical formulation
+------------------------
 

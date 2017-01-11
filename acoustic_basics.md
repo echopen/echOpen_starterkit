@@ -43,3 +43,36 @@ begin{equation}
  \label{eq:speed of sound}
 \end{equation}
 
+ for example, for the water we have: *ρ* = 1000 kg.m<sup>−3</sup>, *κ* = 2.19 MPa and *c* = 1480 m.s<sup>−1</sup>.
+
+The mathematical formulation is obtained by solving the Helmholtz equation, for exemple, the acoustic pressure *p*(*x*,*t*) can be expressed as:
+
+\begin{equation}
+ p\left(x,t\right)=\left(A^{+}\e^{\im kx}+A^{-}\e^{-\im kx}\right)\e^{-\im 
+\omega t},
+ \label{eq:math 1D formulation}
+\end{equation}
+
+$A^{+}\\e^{\\im kx}$ is a wave of amplitude *A*<sup>+</sup>, propagating toward the positive *x*, $A^{-}\\e^{-\\im kx}$ is a wave of amplitude *A*<sup>−</sup>, propagating toward the negative *x*. $k=\\dfrac{\\omega}{c}$ is the wavenumber, *ω* = 2*π**f* the angular pulsation and *f* the frequency.
+
+When we make an echographic image, we are intresting only on the intensity of the wave:
+
+\begin{equation}
+ I=\dfrac{1}{2}\Re\left[p\left(x,t\right)v^{*}\left(x,t\right)\right],
+ \label{eq:acoustic intensity}
+\end{equation}
+
+where *v*(*x*,*t*) is the velocity of the particle, and *x*<sup>\*</sup> represent the complex conjugate of *x*. It can be shown with the Euler’s equation that the intensity is directly proportional to the square modulus of the pressure.
+
+Refraction and diffusion of acoustic waves
+------------------------------------------
+
+When an acoustic wave passes from a medium (0) to a second medium (1), a part of the wave is reflected an the over part is transmitted through the interface. When the interface is flat in the point of view of the wave, we have refraction (it is a quasi one dimensional problem, because the wave is reflected on only one direction of the space). When the wave sees the curvature of the interface, the wave is scattered on all the directions of the space, we talk then about diffusion.
+
+### Refraction of a wave
+
+<figure>
+  <img src="./acoustic_imaging_src/image/refraction.png" alt="" />
+  <figcaption> <i>Figure 4: Refraction of a wave.</i> </figcaption>
+</figure>
+

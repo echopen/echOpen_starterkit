@@ -16,30 +16,30 @@ An acoustic wave is a perturbation of the local state without displacement of th
 
 <figure>
   <img src="./acoustic_imaging_src/image/at_rest.png" alt="" />
-  <figcaption> Figure 1 test: At rest. </figcaption>
+  <figcaption> *Figure 1: Medium at rest.* </figcaption>
 </figure>
-
- ![Medium at rest.<span data-label="fig:at_rest"></span>]
-
- *Figure 1: Medium at rest.*
 
 There is two types of acoustic waves, the longitudinal waves (Fig. 2) also named P waves and the transverse waves (Fig. 3) also named SH or SV waves. The longitudinal waves are compressional waves, the direction of the displacement of the particles is the same than the direction of propagation of the wave. The transverse waves are shear waves, the direction of displacement is then perpendicular to the direction of propagation of the wave. In a fluid, such as the water, only longitudinal waves can propagate. In the human body, the shear modulus is very small, it can be considered as a fluid, and so only longitudinal waves will be generated.
 
- ![Longitudinal wave.<span data-label="fig:Pwave"></span>]
-
- *Figure 2: Longitudinal wave.*
-
-  [Medium at rest.<span data-label="fig:at_rest"></span>]: ./acoustic_imaging_src/image/at_rest.png "fig:"
-  [Longitudinal wave.<span data-label="fig:Pwave"></span>]: ./acoustic_imaging_src/image/Pwave.png "fig:"
-
- ![Shear wave.<span data-label="fig:Swave"></span>]
-
- *Figure 3: Shear wave.*
+<figure>
+  <img src="./acoustic_imaging_src/image/Pwave.png" alt="" />
+  <figcaption> *Figure 2: Longitudinal wave.* </figcaption>
+</figure>
 
 In the rest of the document, we will only consider longitudinal waves.
 
-  [Shear wave.<span data-label="fig:Swave"></span>]: ./acoustic_imaging_src/image/Swave.png "fig:"
+<figure>
+  <img src="./acoustic_imaging_src/image/Swave.png" alt="" />
+  <figcaption> *Figure 3: Shear wave.* </figcaption>
+</figure>
 
 Mathematical formulation
 ------------------------
+
+In acoustic, a fluid medium is describe by two mecanical parameters: the mass density *ρ* and the bulk modulus *κ*. The bulk modulus relate the change of volume of a medium to the isostatic pressure apply on it. The velocity of the acoustic wave *c* is:
+
+begin{equation}
+ c=\sqrt{\dfrac{\kappa}{\rho}},
+ \label{eq:speed of sound}
+\end{equation}
 

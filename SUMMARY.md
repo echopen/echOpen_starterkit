@@ -5,7 +5,7 @@
    * [warm up](warm_up.md)
    * [Community tools](community_tools.md)
    * [Coding & Documenting](coding_&_documenting.md)
-* [Accoustic basics](accoustic_basics.md)
+* [Acoustic basics](acoustic_basics.md)
 * [Set up your own echOpen lab](setup_your_own_echopen_lab.md)
 * [Hardware](hardware.md)
 	* [Technical introduction](technical_introduction.md)

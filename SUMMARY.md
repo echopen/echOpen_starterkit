@@ -1,7 +1,7 @@
 # Summary
 
 * [Welcome](README.md)
-* [Integration](0. integration.md)
+* [Integration](0_integration.md)
    * [warm up](warm_up.md)
    * [Community tools](community_tools.md)
    * [Coding & Documenting](coding_&_documenting.md)

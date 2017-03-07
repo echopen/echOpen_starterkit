@@ -29,4 +29,4 @@ Enjoy your reading !
 
 **echOpen community**
 
-For more details, please visit [echopen.org](http://echopen.org/) 
+For more details, please visit [echopen.org](http://echopen.org/) and join us on slack, Facebook and Twitter. 

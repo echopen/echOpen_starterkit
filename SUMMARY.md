@@ -8,7 +8,7 @@
 * [Join]()
 	* [Discover](discover.md)
 	* [Integrate](integrate.md)
-	* [Contribute]()
+	* [Contribute](contribute.md)
 * [Topics]()
 	* [Medicotechnical]()
 	* [Collaborative and community]()

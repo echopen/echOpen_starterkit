@@ -6,7 +6,7 @@ Use of a **universal** ultra-portable **ultrasound** imaging or **medical visual
 Echostethoscopy is primarily aimed at physicians who have never take ultrasound images and who have taken a 48-hour training program to master the gesture and the concept.
 
 ## Use of the echostethoscopy
-![Use of the echostethoscope](images/disruptive_diagnostic_tool.jpg)
+![Use of the echostethoscope](images/disruptive_diagnosis_technology.png)
 
 ## Medical definition of the tool
 In version 0, the probe meets the following criteria to validate a relevant medical use:

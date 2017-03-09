@@ -25,7 +25,7 @@ It is not :
 - A tool for tissue analysis
 
 ## Positionning 
-![](images/echopen_positionning.jpg)
+![](images/echopen_positionning.png)
 
 ## Medical application
 Main pathologies that echOpen should cover in general medicine and emergency medicine : 

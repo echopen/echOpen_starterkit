@@ -1,7 +1,7 @@
 # Summary
 
 * [Welcome](README.md)
-* [The project](overview.md)
+* [Project overview](overview.md)
 * [Join]()
 * [Integration](integration.md)
 	* [warm up](warm_up.md)

@@ -6,9 +6,9 @@ Use of a **universal** ultra-portable **ultrasound** imaging or **medical visual
 Echostethoscopy is primarily aimed at physicians who have never take ultrasound images and who have taken a 48-hour training program to master the gesture and the concept.
 
 ## Use of the echostethoscopy
-![Use of the echostéthoscope](images/disruptive_diagnostic_tool.jpg)
+![Use of the echostethoscope](images/disruptive_diagnostic_tool.jpg)
 
-## Definition of the tool
+## Medical definition of the tool
 In version 0, the probe meets the following criteria to validate a relevant medical use:
 
 The echOpen probe is an internal echo-anatomy visualization tool used in the clinical examination, enabling healthcare professionals to:
@@ -25,5 +25,16 @@ It is not :
 - A tool for tissue analysis
 
 ## Positionning 
-
 ![](images/echopen_positionning.jpg)
+
+## Medical application
+Main pathologies that echOpen should cover in general medicine and emergency medicine : 
+- Pleural effusion
+- Ascites
+- Right heart failure 
+- Acute pulmonary oedema
+- Valvulopathy
+- Kidney stones
+- Central catheter guidance 
+
+More to come… 

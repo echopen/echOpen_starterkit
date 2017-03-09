@@ -12,6 +12,13 @@ Allowing the radical transformation of diagnostic orientation in hospitals, gene
 Better Access To Medical Imaging: **Anytime, anywhere, any moment**
 ![](images/echopen_areaofuse.png)
 
+# Objectives 
+> Providing healthcare professionals around the world with an affordable echo-stethoscope
+
+- Medical: Launching a class II.a. medical device 
+- Community: pluri-disciplinary collaboration for worldwide open sourced contributions
+- Technical: innovative diagnosis solution (low-cost/affordable, open source, etc.)
+
 # Outcomes | March 2017
 - 1 lab prototype (kit format split into modules) fully documented
 - 1 high quality transducer

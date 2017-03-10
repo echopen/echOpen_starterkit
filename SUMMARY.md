@@ -2,7 +2,7 @@
 
 * [Welcome](README.md)
 * [Project overview](overview.md)
-	* [Technical]()
+	* [Technical](technical.md)
 	* [Medical](medical.md)
 	* [Community]()
 * [State of the project]()

@@ -5,3 +5,4 @@
 - 2 000+ participants in events (workshops, hackathons)
 - 5 000+ people reached 
 - 10 000+ hours of skills given to the project 
+

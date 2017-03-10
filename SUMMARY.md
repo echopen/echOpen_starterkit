@@ -5,7 +5,7 @@
 	* [Technical](technical.md)
 	* [Medical](medical.md)
 	* [Community]()
-* [State of the project]()
+* [State of the project](outcome.md)
 * [Join]()
 	* [Discover](discover.md)
 	* [Integrate](integrate.md)

@@ -13,4 +13,4 @@ Enjoy your reading !
 
 For more details, please visit [echopen.org](http://echopen.org/) and join us on Slack, Facebook and Twitter. 
 
-> Illustrations for echOpen [CC BY NC ND](https://creativecommons.org/licenses/by-nc-nd/3.0/): Drawings by Barbara Govin / Storyboard by Ermete Mariani 
+Illustrations for echOpen [CC BY NC ND](https://creativecommons.org/licenses/by-nc-nd/3.0/): Drawings by Barbara Govin / Storyboard by Ermete Mariani 

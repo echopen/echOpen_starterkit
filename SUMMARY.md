@@ -20,7 +20,6 @@
 	* [Public health]()
 	* [Economical]()
 * [Release 2.0.1](release_2_1_0.md)
-* [Acoustic basics](acoustic_basics.md)
 * [Set up your own echOpen lab](setup_your_own_echopen_lab.md)
 * [Hardware](hardware.md)
 	* [Technical introduction](technical_introduction.md)

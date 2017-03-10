@@ -22,7 +22,7 @@ It is not :
 - A tool for tissue analysis
 
 ## Positionning 
-![](images/echopen_positionning.png)
+![The use of a stethoscope, the technology of an ultrasound system](images/echopen_positionning.png)
 
 ## Use of the echostethoscop
 ![Use of the echostethoscope](images/disruptive_diagnosis_technology.png)

@@ -15,7 +15,7 @@
 | 2.2.2 | 11.2016 | Stepper management | Firmware Arduino fo the stepper | Feng W., Joris J.B. |
 | 2.2.1 | 11.2016 | Stepper management | Stepper driving new PCB | Feng W., Joris J.B. |
 | 2.2.0 | 11.2017 | Aquarium mechanical sweeping and stepper | 3D printed transducer mount, target mount and motor mount | Jérôme D., Feng W. |
-| 2.1.0 | 10.2016 | Electronic noise reduction | printed PCB | Jérôme D. |
+| [2.1.0](https://echopen.gitbooks.io/starterkit/content/release_2_1_0.html) | 10.2016 | Electronic noise reduction | printed PCB | Jérôme D. |
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
 

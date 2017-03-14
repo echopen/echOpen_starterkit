@@ -1,3 +1,6 @@
+# Project
+echOpen is a medical project with a community challenge and a technical outcome. 
+
 # Aim
 Designing a **universal**, **open source** and **affordable** medical echo-stethoscope (ultrasound probe) **connected** to a mobile device (smartphone) for **diagnostic orientation** 
 
